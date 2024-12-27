@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Porfólio Lucas Martins Nunes
 
 

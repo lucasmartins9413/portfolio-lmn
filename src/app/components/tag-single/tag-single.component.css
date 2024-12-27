@@ -1,0 +1,13 @@
+.tag_single{
+    background: #292C34;
+    color: #C0C4CE;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 16px;
+    width: fit-content;
+    border-radius: 999px;
+    cursor: pointer;
+}

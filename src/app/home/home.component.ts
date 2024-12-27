@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TagSingleComponent } from '../components/tag-single/tag-single.component';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [TagSingleComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
