@@ -25,6 +25,13 @@
     border: 1px solid rgba(134, 132, 132, 0.21);
     border-radius: 4px;
     background: #1C1F2A;
+    color: #fff;
+    outline: none;
+}
+
+.form-contact label input:focus{
+    border: 1px solid #00918F;
+    outline: none;
 }
 
 
@@ -33,4 +40,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #00918F;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
 }
