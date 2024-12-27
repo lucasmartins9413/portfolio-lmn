@@ -112,7 +112,7 @@ section.projects_home .content{
 
 
 section.form_home{
-    padding: 64px 0;
+    padding: 64px 0 80px;
 }
 
 section.form_home .content{
@@ -137,8 +137,8 @@ section.form_home .content .text h2{
 
 section.form_home .content .text p{
     color: #F8F5F2;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height:28px;
     margin: 0 0 48px;
 }
 
