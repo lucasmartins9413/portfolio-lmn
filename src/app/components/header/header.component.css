@@ -15,9 +15,13 @@ header .content .menu ul{
 
 header .content .menu ul li a{
     text-decoration: none;
-    color: #F8F5F2;
+    color: var(--white-primary);
     font-size: 20px;
     font-weight: 400;
+    transition: all 0.3s;
+}
+header .content .menu ul li a:hover{
+    text-decoration: underline;
 }
 
 @media (max-width:768px){
