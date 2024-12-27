@@ -7,9 +7,7 @@ Portfólio do Lucas Martins Nunes!
 
 ## 📦 Tecnologias usadas:
 
-PHP, HTML, CSS e JS
-
-Projeto feito no padrão MVC
+HTML, CSS e JS (Angular)
 
 ## 👷 Autores
 
