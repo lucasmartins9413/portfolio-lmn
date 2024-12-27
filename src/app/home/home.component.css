@@ -80,7 +80,7 @@ app-project-card {
 }
 
 section.projects_home{
-    padding: 128px 0;
+    padding: 128px 0 64px;
 }
 
 section.projects_home h2{
@@ -106,4 +106,69 @@ section.projects_home .content{
     display: flex;
     justify-content: center;
     gap: 23px 20px;
+}
+
+/* contact */
+
+
+section.form_home{
+    padding: 64px 0;
+}
+
+section.form_home .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.form_home .content .text{
+    width: 100%;
+    max-width: 520px;
+}
+
+section.form_home .content .text h2{
+    color: #F8F5F2;
+    font-size: 42px;
+    line-height: 52px;
+    margin: 0 0 16px;
+    max-width: 420px;
+    width: 100%;
+}
+
+section.form_home .content .text p{
+    color: #F8F5F2;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 0 48px;
+}
+
+section.form_home .content .text .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+section.form_home .content .text a{
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    border-radius: 8px;
+    color: #fff;
+    background: #00918F;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+section.form_home .content .text a.download{
+    background: #F45D48;
+}
+
+#form{
+    width: 100%;
+    max-width: 592px;
 }
