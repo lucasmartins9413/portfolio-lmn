@@ -1,0 +1,21 @@
+header{
+    padding: 24px 0;
+}
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .content .menu ul{
+    display: flex;
+    align-items: center;
+    gap:32px;
+}
+
+header .content .menu ul li a{
+    text-decoration: none;
+    color: #F8F5F2;
+    font-size: 20px;
+    font-weight: 400;
+}

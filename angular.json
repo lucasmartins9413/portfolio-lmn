@@ -99,6 +99,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": false
+=======
+    "analytics": "0b63b174-64c4-4f2c-a707-cd027a20a29a"
+>>>>>>> a6630b4 (att portfolio)
   }
 }
