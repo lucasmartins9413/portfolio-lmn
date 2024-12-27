@@ -40,6 +40,14 @@ section.tags_home .content{
     justify-content: center;
 }
 
+@media (max-width:768px){
+    section.hero_home h1{
+        font-size: 42px;
+        line-height: 52px;
+    }
+    
+}
+
 /* section ecom tags */
 
 
@@ -171,4 +179,26 @@ section.form_home .content .text a.download{
 #form{
     width: 100%;
     max-width: 592px;
+}
+
+@media (max-width:768px){
+    section.form_home .content{
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    
+    section.form_home .content .text,
+    section.form_home .content .text h2{
+        text-align: center;
+    }
+
+    section.form_home .content .text h2{
+        margin: 0 auto 16px;
+    }
+
+    section.form_home .content .text .buttons{
+        justify-content: center;
+        align-items: center;
+    }
 }

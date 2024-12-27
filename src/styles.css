@@ -15,4 +15,5 @@ li{list-style-type: none;}
     width: 100%;
     max-width: 1224px;
     margin: 0 auto;
+    padding: 0 20px;
 }
