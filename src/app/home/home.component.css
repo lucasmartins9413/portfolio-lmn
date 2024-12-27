@@ -74,5 +74,36 @@ section.ecom_home .content .tag_single{
 }
 
 /* projects home */
+app-project-card {
+    width: 100%;
+    max-width: 420px;
+}
+
+section.projects_home{
+    padding: 128px 0;
+}
+
+section.projects_home h2{
+    color: #F8F5F2;
+    text-align: center;
+    font-size: 42px;
+    line-height: 52px;
+    margin: 0 0 16px;
+}
 
 
+section.projects_home p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto 48px;
+    color: #F8F5F2;
+}
+
+section.projects_home .content{
+    display: flex;
+    justify-content: center;
+    gap: 23px 20px;
+}
