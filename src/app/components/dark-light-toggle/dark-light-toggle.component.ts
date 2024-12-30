@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 
 @Component({
@@ -7,22 +7,34 @@ import { CommonModule } from '@angular/common';
   templateUrl: './dark-light-toggle.component.html',
   styleUrl: './dark-light-toggle.component.css'
 })
-export class DarkLightToggleComponent {
-  toggleTheme(): void {
-    const body = document.body;
-    body.classList.toggle('dark-theme');
-    if (body.classList.contains('dark-theme')) {
-      localStorage.setItem('theme', 'dark');
-    } else {
-      localStorage.setItem('theme', 'light');
+export class DarkLightToggleComponent implements OnInit {
+  theme: string = 'dark-theme'; // Tema padrão inicial
+
+  ngOnInit() {
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+      // Obtém o tema do localStorage ou usa o padrão inicial
+      const savedTheme = localStorage.getItem('theme') || 'dark-theme';
+      this.theme = savedTheme;
+      document.body.classList.add(this.theme);
     }
   }
-  ngOnInit(): void {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        document.body.classList.add('dark-theme');
-      }
+
+  toggleTheme() {
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+      const currentTheme = this.theme;
+      const newTheme = currentTheme === 'dark-theme' ? 'light-theme' : 'dark-theme';
+
+      // Alterna a classe no body
+      document.body.classList.remove(currentTheme);
+      document.body.classList.add(newTheme);
+
+      // Atualiza o estado e salva no localStorage
+      this.theme = newTheme;
+      localStorage.setItem('theme', newTheme);
     }
+  }
+
+  get isDarkMode(): boolean {
+    return this.theme === 'dark-theme';
   }
 }

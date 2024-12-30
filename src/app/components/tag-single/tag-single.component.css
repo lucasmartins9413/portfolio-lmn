@@ -11,3 +11,7 @@
     border-radius: 999px;
     cursor: pointer;
 }
+
+.tag_single:hover{
+    box-shadow: 0 4px 8px rgba(244, 93, 72, 0.4);
+}
