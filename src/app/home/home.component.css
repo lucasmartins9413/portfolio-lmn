@@ -114,6 +114,7 @@ section.projects_home .content{
     display: flex;
     justify-content: center;
     gap: 23px 20px;
+    flex-wrap:wrap;
 }
 
 /* contact */
