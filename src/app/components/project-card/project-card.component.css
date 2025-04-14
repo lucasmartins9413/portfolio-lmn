@@ -9,6 +9,7 @@
     padding: 32px 16px;
     border: 1px solid rgba(112, 112, 112, 0.46);
     border-radius: 8px;
+    min-height:420px;
 }
 
 .project-single img{
