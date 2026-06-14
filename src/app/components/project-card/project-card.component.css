@@ -14,7 +14,11 @@
 
 .project-single img{
     object-fit: contain;
-    width: 100%;
+}
+
+.project-single img.small-icon {
+    width: 80px;
+    height: 80px;
 }
 
 .project-single h3{
@@ -40,4 +44,15 @@
     color: var(--orange);
     line-height: 24px;
     text-decoration: underline;
+}
+
+.private-badge {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 3px 12px;
+    border-radius: 999px;
+    opacity: 0.7;
+    letter-spacing: 0.04em;
 }

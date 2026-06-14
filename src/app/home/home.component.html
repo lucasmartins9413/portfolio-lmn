@@ -1,54 +1,57 @@
 <main>
     <section id="about" class="hero_home">
         <div class="container">
-            <h6>Hello World! Meu nome é <strong>Lucas Martins</strong> e sou</h6>
-            <h1>Desenvolvedor Fullstack</h1>
-            <p>"Atualmente, trabalho com plataformas de e-commerce como VTEX, Wake e Shopify, ajudando empresas a escalarem seus negócios online. Paralelamente, dedico meu tempo ao estudo de Laravel, meu principal foco para aprimorar habilidades e me tornar um desenvolvedor PHP.
-            Acompanhando as tendências do mercado para oferecer soluções que atendam às demandas atuais e futuras. Meu objetivo é evoluir continuamente como desenvolvedor, construindo uma base sólida em PHP e Laravel."</p>
-        </div>    
+            <h1>Lucas Martins</h1>
+            <h2 class="hero_role">Desenvolvedor Full Stack</h2>
+            <p>Fundador de dois produtos em produção e desenvolvedor Full Stack com foco no ecossistema <strong>Laravel</strong>. Construo sistemas do zero ao deploy — APIs REST, autenticação, multi-tenant e <strong>VPS Linux</strong>. Também atuo com e-commerce em <strong>VTEX IO e Shopify</strong>, desenvolvendo temas e apps customizados.</p>
+        </div>
     </section>
 
     <section id="habilits" class="tags_home">
         <div class="container content">
-            <app-tag-single 
-                [iconPath]="'assets/github-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/github-icon.svg'"
                 text="Github">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/html-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/html-icon.svg'"
                 text="HTML">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/css-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/css-icon.svg'"
                 text="CSS">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/js-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/js-icon.svg'"
                 text="Javascript">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/react-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/react-icon.svg'"
                 text="React">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/php-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/php-icon.svg'"
                 text="PHP">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/laravel-icon.png'" 
+            <app-tag-single
+                [iconPath]="'assets/laravel-icon.png'"
                 text="Laravel">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/wordpress-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/wordpress-icon.svg'"
                 text="Wordpress">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/docker-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/docker-icon.svg'"
                 text="Docker">
             </app-tag-single>
-            <app-tag-single 
-                [iconPath]="'assets/figma-icon.svg'" 
+            <app-tag-single
+                [iconPath]="'assets/figma-icon.svg'"
                 text="Figma">
+            </app-tag-single>
+            <app-tag-single
+                [iconPath]="'assets/nextjs-icon.svg'"
+                text="Next.js">
             </app-tag-single>
         </div>
     </section>
@@ -58,29 +61,117 @@
             <h2>Plataformas Ecommerce</h2>
 
             <div class="content">
-                <app-tag-single 
-                    [iconPath]="'assets/vtex-icon.png'" 
-                    [text]="'Vtex IO'" 
+                <app-tag-single
+                    [iconPath]="'assets/vtex-icon.png'"
+                    [text]="'Vtex IO'"
                     [width]="'75'">
                 </app-tag-single>
-                <app-tag-single 
-                    [iconPath]="'assets/shopify-icon.png'" 
+                <app-tag-single
+                    [iconPath]="'assets/shopify-icon.png'"
                     [text]="'Shopify'">
                 </app-tag-single>
-                <app-tag-single 
-                    [iconPath]="'assets/wake-icon.png'" 
-                    [text]="'Wake'"
-                    [width]="'45'">
+            </div>
+        </div>
+    </section>
+
+    <section class="exploring_home">
+        <div class="container">
+            <p class="exploring-label">Explorando</p>
+            <div class="exploring-content">
+                <app-tag-single
+                    [iconPath]="'assets/python-icon.svg'"
+                    text="Python">
                 </app-tag-single>
-                <app-tag-single 
-                    [iconPath]="'assets/deco-icon.png'" 
-                    [text]="'Deco.cx'">
+                <app-tag-single
+                    [iconPath]="'assets/elixir-icon.svg'"
+                    text="Elixir">
                 </app-tag-single>
-                <app-tag-single 
-                    [iconPath]="'assets/woo-icon.png'" 
-                    [text]="'Woocommerce'"
-                    [width]="'40'">
-                </app-tag-single>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience_home">
+        <div class="container">
+            <h2>Experiência</h2>
+            <div class="timeline">
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Freelancer</h3>
+                            <span class="role">Desenvolvedor Web</span>
+                        </div>
+                        <span class="period">Mar 2026 — Atual</span>
+                    </div>
+                    <p>Atuação autônoma com foco em desenvolvimento web para diferentes clientes. Desenvolvimento de apps e temas para Shopify, criação de sites com Next.js e Strapi (CMS headless), projetos WordPress e manutenção de sistemas Laravel. Em paralelo, sigo evoluindo os produtos próprios que fundei — Litoral Vagas e Correta Fácil — e aprofundando conhecimentos em Laravel e no ecossistema PHP.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Nobox</h3>
+                            <span class="role">Desenvolvedor Laravel</span>
+                        </div>
+                        <span class="period">Mar 2025 — Fev 2026</span>
+                    </div>
+                    <p>Atuei no desenvolvimento e manutenção de sistemas internos e sites institucionais em WordPress e Laravel. Principal entrega: sistema corporativo do zero para gestão de 7.000+ itens em estoque, com módulos de aluguel, logística e eventos. Também evolui funcionalidades existentes em outros projetos da empresa, sempre com Laravel, MySQL e deploy em VPS Linux.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Litoral Vagas <span class="founder-badge">Fundador</span></h3>
+                            <span class="role">Desenvolvedor Full Stack</span>
+                        </div>
+                        <span class="period">2024 — Atual</span>
+                    </div>
+                    <p>Projeto pessoal onde aplico os aprendizados do ecossistema Laravel enquanto contribuo com a comunidade da Baixada Santista. Plataforma regional de empregos desenvolvida do zero, com 200+ usuários ativos, sistema de candidaturas e envio de currículo direto ao RH — da modelagem do banco ao deploy em produção.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Correta Fácil <span class="founder-badge">Fundador</span></h3>
+                            <span class="role">Desenvolvedor Full Stack</span>
+                        </div>
+                        <span class="period">2026 — Atual</span>
+                    </div>
+                    <p>Produto SaaS criado do zero para corretores autônomos. Laravel com multi-tenancy, sistema de permissões por perfil, funil de vendas, automações comerciais e integração com meios de pagamento. Configuração completa de VPS Linux — servidor, domínio, SSL e fluxo de deploy.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Agência FG</h3>
+                            <span class="role">Desenvolvedor Front-End</span>
+                        </div>
+                        <span class="period">Jun 2023 — Fev 2025</span>
+                    </div>
+                    <p>Atuei em squads de evolução de e-commerces em VTEX IO, Deco.cx e Linx, desenvolvendo novas funcionalidades com React em ciclos de sprint. Apoiei o time de projetos na construção de lojas do zero em VTEX IO e iniciei os estudos em Shopify durante esse período. Paralelamente, realizei manutenção e melhorias em projetos legados em WordPress e CodeIgniter.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h3>MKTNow</h3>
+                            <span class="role">Desenvolvedor Front-End</span>
+                        </div>
+                        <span class="period">Nov 2022 — Jun 2023</span>
+                    </div>
+                    <p>Primeiro contato com time de desenvolvimento e metodologia ágil com sprints. Atuei na construção de novas funcionalidades para lojas VTEX (IO e CMS) e na manutenção e melhoria de sites desenvolvidos em WordPress e Laravel, sempre com foco em performance, Core Web Vitals e SEO técnico.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Renove Digital</h3>
+                            <span class="role">Desenvolvedor Front-End</span>
+                        </div>
+                        <span class="period">Out 2021 — Nov 2022</span>
+                    </div>
+                    <p>Primeira experiência em agência digital, participando de todo o ciclo de projetos — do levantamento de requisitos à entrega. Desenvolvimento de sites institucionais e sistemas web com Laravel, React e WordPress, com foco em acessibilidade e boas práticas de UX.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -95,31 +186,80 @@
                     [imgPath]="'assets/litoral-logo.png'"
                     [title]="'Litoral Vagas'"
                     [url]="'https://litoralvagas.com.br'"
-                    [description]="'Um site de vagas intuitivo e eficiente, conectando empresas e candidatos para oportunidades de emprego em diversas áreas.'"
-                    >
+                    [description]="'Plataforma regional de empregos com mais de 200 usuários ativos. Sistema completo de candidaturas, gestão de vagas e envio de currículo direto ao RH.'">
                 </app-project-card>
 
                 <app-project-card
                     [imgPath]="'assets/tonus-logo.png'"
                     [title]="'Tonus Fitness'"
                     [url]="'https://tonusonline.com.br'"
-                    [description]="'Site vitrine da Tonus Fitness, onde os usuários podem explorar a linha de equipamentos, adicionar produtos ao carrinho e solicitar orçamentos de forma prática e intuitiva.'"
-                    >
+                    [description]="'Site vitrine da Tonus Fitness, onde os usuários podem explorar a linha de equipamentos, adicionar produtos ao carrinho e solicitar orçamentos de forma prática e intuitiva.'">
+                </app-project-card>
+
+                <app-project-card
+                    [imgPath]="'assets/corretafacil-logo.png'"
+                    [title]="'Correta Fácil'"
+                    [url]="'https://corretafacil.com.br'"
+                    [description]="'SaaS para corretores autônomos desenvolvido com Laravel. Arquitetura multi-tenant, autenticação, permissões, funil de vendas, integração com meios de pagamento e deploy em VPS com configuração completa de servidor Linux.'">
+                </app-project-card>
+
+                <app-project-card
+                    [imgPath]="'assets/nobox-logo.png'"
+                    [title]="'Nobox — Gestão de Estoque'"
+                    [url]="'https://gestao.smaas.app'"
+                    [description]="'Sistema de gestão de estoque com mais de 7.000 itens, módulos de aluguel de equipamentos e gerenciamento de eventos. Deploy em VPS com Docker e integrações via API REST.'">
+                </app-project-card>
+
+                <app-project-card
+                    [imgPath]="'assets/shopify-icon.png'"
+                    [smallIcon]="true"
+                    [title]="'Alpha Theme — Shopify (Estudo)'"
+                    [url]="'https://alpha-theme-9opgdy06.myshopify.com/'"
+                    [description]="'Tema Shopify desenvolvido para aprender a construir apps na plataforma. Exploração de Liquid, seções dinâmicas e App Bridge. Senha de acesso: skaigh'">
+                </app-project-card>
+
+                <app-project-card
+                    [imgPath]="'assets/laravel-icon.png'"
+                    [smallIcon]="true"
+                    [title]="'App Laravel + Shopify (Estudo)'"
+                    [url]="''"
+                    [description]="'App Laravel com integração nativa à Shopify. Autenticação OAuth, consumo da Shopify Admin API e webhooks — em desenvolvimento.'">
                 </app-project-card>
             </div>
         </div>
     </section>
 
 
+    <section class="education_home">
+        <div class="container">
+            <h2>Formação</h2>
+            <div class="education-grid">
+
+                <div class="edu-card">
+                    <div class="edu-top">
+                        <span class="edu-status current">Em andamento</span>
+                    </div>
+                    <h3>Bacharelado em Ciência da Computação</h3>
+                    <span class="edu-institution">UNINTER — Centro Universitário Internacional</span>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-top">
+                        <span class="edu-status current">Em andamento</span>
+                    </div>
+                    <h3>Licenciatura em Matemática</h3>
+                    <span class="edu-institution">UNIVESP</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="form_home">
         <div class="container content">
             <div class="text">
                 <h2>Como posso ajudar seu negócio?</h2>
                 <p>Se você tem interesse em trocar ideias, colaborar em projetos ou precisa de ajuda com soluções para e-commerce ou desenvolvimento web, ficarei feliz em conversar!</p>
-                <!-- <div class="buttons">
-                    <a class="contact" href="">ENTRAR EM CONTATO</a>
-                    <a class="download" href="">DOWNLOAD CV</a>
-                </div> -->
             </div>
 
             <div id="form">

@@ -9,7 +9,8 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class ProjectCardComponent {
   @Input() imgPath: string = '';
-  @Input() title = ''; 
-  @Input() description = ''; 
+  @Input() title = '';
+  @Input() description = '';
   @Input() url: string = '';
+  @Input() smallIcon: boolean = false;
 }
