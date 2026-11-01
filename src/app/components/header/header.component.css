@@ -1,31 +1,103 @@
-header{
-    padding: 24px 0;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 14px 0;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
 }
-header .content{
+
+header .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
 }
 
-header .content .menu ul{
+.logo {
+    display: flex;
+    text-decoration: none;
+}
+
+.logo svg {
+    width: 44px;
+    height: auto;
+}
+
+.logo svg > path:first-of-type {
+    fill: var(--accent);
+}
+
+.logo svg > path:last-of-type {
+    fill: var(--bg);
+}
+
+header .menu ul {
     display: flex;
     align-items: center;
-    gap:32px;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
 }
 
-header .content .menu ul li a{
+header .menu ul li a {
+    display: block;
+    padding: 7px 16px;
+    border-radius: 999px;
     text-decoration: none;
-    color: var(--white-primary);
-    font-size: 20px;
-    font-weight: 400;
-    transition: all 0.3s;
-}
-header .content .menu ul li a:hover{
-    text-decoration: underline;
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
 }
 
-@media (max-width:768px){
-    header .content .menu{
+header .menu ul li a:hover {
+    color: var(--text);
+    background: var(--surface-2);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang {
+    display: flex;
+    padding: 3px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+}
+
+.lang button {
+    border: none;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s;
+}
+
+.lang button:hover {
+    color: var(--text);
+}
+
+.lang button.active {
+    background: var(--accent);
+    color: var(--accent-ink);
+}
+
+@media (max-width: 1000px) {
+    header .menu {
         display: none;
     }
 }

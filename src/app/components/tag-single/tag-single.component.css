@@ -1,17 +1,19 @@
-.tag_single{
-    background: #292C34;
-    color: #C0C4CE;
-    display: flex;
+.chip {
+    display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 16px;
-    font-size: 16px;
-    line-height: 16px;
-    width: fit-content;
+    padding: 7px 14px 7px 10px;
+    border: 1px solid var(--line);
     border-radius: 999px;
-    cursor: pointer;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
 }
 
-.tag_single:hover{
-    box-shadow: 0 4px 8px rgba(244, 93, 72, 0.4);
+.chip img {
+    height: 18px;
+    object-fit: contain;
 }

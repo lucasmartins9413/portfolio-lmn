@@ -1,14 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-tag-single',
-  imports: [NgOptimizedImage],
   templateUrl: './tag-single.component.html',
   styleUrls: ['./tag-single.component.css'],
 })
 export class TagSingleComponent {
   @Input() iconPath: string = '';
-  @Input() text = ''; 
-  @Input() width: string = '25';
+  @Input() text = '';
+  /** '20' renders a square icon; anything else keeps the image's own aspect ratio (wide logos). */
+  @Input() width: string = '20';
 }

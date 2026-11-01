@@ -1,47 +1,53 @@
-<form 
-    action="https://formsquash.io/f/XNv5bVqIb9AcpKZKCRKc" 
+@let f = i18n.t().form;
+<form
+    action="https://formsquash.io/f/XNv5bVqIb9AcpKZKCRKc"
     method="POST"
-    id="contactForm" 
-    [formGroup]="contactForm" 
+    id="contactForm"
+    [formGroup]="contactForm"
     class="form-contact"
     (ngSubmit)="onSubmit()"
 >
-    <label>
-    Nome:
-    <input type="text" formControlName="name" name="name" placeholder="Seu nome">
-    <small *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched">
-      O nome é obrigatório.
-    </small>
-    <small *ngIf="contactForm.get('name')?.hasError('minlength') && contactForm.get('name')?.touched">
-      O nome deve ter pelo menos 3 caracteres.
-    </small>
+  <label>
+    {{ f.name }}
+    <input type="text" formControlName="name" name="name" [placeholder]="f.namePh" autocomplete="name">
+    @if (contactForm.get('name')?.touched) {
+      @if (contactForm.get('name')?.hasError('required')) {
+        <small>{{ f.nameRequired }}</small>
+      } @else if (contactForm.get('name')?.hasError('minlength')) {
+        <small>{{ f.nameMin }}</small>
+      }
+    }
   </label>
 
   <label>
-    Email:
-    <input type="email" formControlName="email" name="email" placeholder="Seu email">
-    <small *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
-      O email é obrigatório.
-    </small>
-    <small *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
-      Insira um email válido.
-    </small>
+    {{ f.email }}
+    <input type="email" formControlName="email" name="email" [placeholder]="f.emailPh" autocomplete="email">
+    @if (contactForm.get('email')?.touched) {
+      @if (contactForm.get('email')?.hasError('required')) {
+        <small>{{ f.emailRequired }}</small>
+      } @else if (contactForm.get('email')?.hasError('email')) {
+        <small>{{ f.emailInvalid }}</small>
+      }
+    }
   </label>
 
   <label>
-    Telefone:
-    <input type="text" formControlName="phone" name="phone" placeholder="(99) 99999-9999">
-    <small *ngIf="contactForm.get('phone')?.hasError('required') && contactForm.get('phone')?.touched">
-      O telefone é obrigatório.
-    </small>
-    <small *ngIf="contactForm.get('phone')?.hasError('pattern') && contactForm.get('phone')?.touched">
-      Insira um telefone válido no formato (99) 99999-9999.
-    </small>
+    {{ f.phone }}
+    <input type="tel" formControlName="phone" name="phone" placeholder="(99) 99999-9999" autocomplete="tel">
+    @if (contactForm.get('phone')?.touched) {
+      @if (contactForm.get('phone')?.hasError('required')) {
+        <small>{{ f.phoneRequired }}</small>
+      } @else if (contactForm.get('phone')?.hasError('pattern')) {
+        <small>{{ f.phoneInvalid }}</small>
+      }
+    }
   </label>
+
   <label>
-    Empresa:
-    <input type="text" formControlName="company" name="company" placeholder="Sua empresa">
+    {{ f.company }}
+    <input type="text" formControlName="company" name="company" [placeholder]="f.companyPh" autocomplete="organization">
   </label>
+
   <input type="hidden" name="_gotcha">
-  <button type="submit">ENTRAR EM CONTATO</button>
+  <button type="submit">{{ f.submit }}</button>
 </form>

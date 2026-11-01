@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { LanguageService } from '../../i18n/language.service';
 import { CommonModule } from '@angular/common'; 
 
 @Component({
@@ -8,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './dark-light-toggle.component.css'
 })
 export class DarkLightToggleComponent implements OnInit {
+  readonly i18n = inject(LanguageService);
   theme: string = 'dark-theme'; // Tema padrão inicial
 
   ngOnInit() {

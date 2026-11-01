@@ -1,49 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Asap", serif;
+}
+
+html {
     scroll-behavior: smooth;
+    scroll-padding-top: 88px;
 }
 
 :root {
-    --white-primary:#E2E4E9;
-    --white-secondary: #E2E4E9;
-    --bg-card:rgba(29, 32, 32, 0.63);
-    --black:#16181D;
-    --green: #078080;
-    --orange: #F45D48;
+    --bg: #0D1B1E;
+    --surface: #132629;
+    --surface-2: #1A3135;
+    --line: rgba(230, 238, 236, 0.10);
+    --line-strong: rgba(230, 238, 236, 0.18);
+    --text: #E6EEEC;
+    --muted: #8FA6A3;
+    --accent: #2BB5A8;
+    --accent-ink: #062A27;
+    --link: #FF7A66;
+
+    --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+    --font-body: "Figtree", system-ui, sans-serif;
+
+    /* legacy tokens still used by a few components */
+    --white-primary: var(--text);
+    --white-secondary: var(--muted);
+    --bg-card: var(--surface);
+    --black: var(--bg);
+    --green: var(--accent);
+    --orange: var(--link);
 }
 
-body.dark-theme {
-    --white-primary: #16181D;
-    --white-secondary: #16181D;
-    --black: #E2E4E9;
-    --bg-card:#16181D;;
+body.light-theme {
+    --bg: #F2F5F4;
+    --surface: #FFFFFF;
+    --surface-2: #E7EEEC;
+    --line: rgba(13, 27, 30, 0.10);
+    --line-strong: rgba(13, 27, 30, 0.18);
+    --text: #0D1B1E;
+    --muted: #4F6664;
+    --accent: #078080;
+    --accent-ink: #FFFFFF;
+    --link: #D2432F;
 }
 
 body {
-    background-color: var(--black); 
-    color: var(--white-primary); 
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
     transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-theme {
-    background-color: var(--black); 
+h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
+a {
+    color: inherit;
+}
 
-li{list-style-type: none;}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.dark-light:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
 
-.container{
+li { list-style-type: none; }
+
+.container {
     width: 100%;
-    max-width: 1224px;
+    max-width: 1180px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 .dark-light {
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
+}
+
+@media (max-width: 600px) {
+    .container { padding: 0 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
 }

@@ -1,49 +1,67 @@
-.form-contact{
-    display: flex;
-    flex-direction: column;
+.form-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
-    background: rgba(217, 217, 217, 0.03);
-    border: 1px solid rgba(134, 132, 132, 0.36);
-    border-radius: 12px;
-    padding: 45px 20px;
     width: 100%;
-    max-width: 592px;
 }
 
-
-.form-contact label{
+.form-contact label {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
-    color: var(--white-primary);
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
 }
 
-.form-contact label input{
-    padding: 0 0 0 8px;
-    height: 42px;
-    margin: 8px 0;
-    border: 1px solid rgba(134, 132, 132, 0.21);
-    border-radius: 4px;
-    background: #1C1F2A;
-    color: #fff;
+.form-contact label input {
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: 12px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 16px;
     outline: none;
+    transition: border-color 0.2s;
 }
 
-.form-contact label input:focus{
-    border: 1px solid var(--green);
-    outline: none;
+.form-contact label input::placeholder {
+    color: var(--muted);
+    opacity: 0.6;
 }
 
+.form-contact label input:focus {
+    border-color: var(--accent);
+}
 
-.form-contact button{
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--green);
+.form-contact small {
+    color: var(--link);
+    font-size: 13px;
+}
+
+.form-contact button {
+    grid-column: 1 / -1;
+    height: 52px;
+    margin-top: 8px;
     border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    color: var(--white-primary);
+    border-radius: 14px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form-contact button:hover {
+    background: color-mix(in srgb, var(--accent) 85%, white);
+}
+
+@media (max-width: 520px) {
+    .form-contact {
+        grid-template-columns: 1fr;
+    }
 }

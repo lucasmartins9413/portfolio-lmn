@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" role="img" aria-label="Vitrine de loja do tema Alpha">
+  <defs>
+    <path id="bag" d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.760-3.406 3.760-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.170.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/>
+  </defs>
+
+  <!-- browser window -->
+  <rect x="40" y="22" width="360" height="190" rx="12" fill="#FFFFFF"/>
+  <rect x="40" y="22" width="360" height="24" rx="12" fill="#EDEFEA"/>
+  <rect x="40" y="36" width="360" height="10" fill="#EDEFEA"/>
+  <circle cx="56" cy="34" r="4" fill="#C9CEC4"/>
+  <circle cx="69" cy="34" r="4" fill="#C9CEC4"/>
+  <circle cx="82" cy="34" r="4" fill="#C9CEC4"/>
+  <rect x="150" y="28" width="140" height="12" rx="6" fill="#FFFFFF"/>
+
+  <!-- store header -->
+  <text x="58" y="70" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="800" letter-spacing="2" fill="#1B2A12">ALPHA</text>
+  <rect x="170" y="62" width="34" height="6" rx="3" fill="#D5DACF"/>
+  <rect x="212" y="62" width="34" height="6" rx="3" fill="#D5DACF"/>
+  <rect x="254" y="62" width="34" height="6" rx="3" fill="#D5DACF"/>
+  <use href="#bag" transform="translate(368 56) scale(0.75)" fill="#5E8E3E"/>
+
+  <!-- hero banner -->
+  <rect x="58" y="82" width="324" height="52" rx="8" fill="#95BF47"/>
+  <rect x="72" y="96" width="120" height="9" rx="4.5" fill="#FFFFFF"/>
+  <rect x="72" y="111" width="80" height="7" rx="3.5" fill="#E3F0CC"/>
+  <rect x="300" y="100" width="66" height="18" rx="9" fill="#1B2A12"/>
+
+  <!-- product grid -->
+  <g>
+    <rect x="58" y="146" width="100" height="44" rx="6" fill="#F1F4EC"/>
+    <rect x="58" y="194" width="62" height="6" rx="3" fill="#C9CEC4"/>
+    <rect x="170" y="146" width="100" height="44" rx="6" fill="#F1F4EC"/>
+    <rect x="170" y="194" width="70" height="6" rx="3" fill="#C9CEC4"/>
+    <rect x="282" y="146" width="100" height="44" rx="6" fill="#F1F4EC"/>
+    <rect x="282" y="194" width="56" height="6" rx="3" fill="#C9CEC4"/>
+  </g>
+  <circle cx="108" cy="168" r="12" fill="#D9E7C2"/>
+  <rect x="208" y="158" width="24" height="24" rx="4" fill="#D9E7C2"/>
+  <path d="M332 156 l14 24 h-28 z" fill="#D9E7C2"/>
+</svg>

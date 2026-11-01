@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../i18n/language.service';
 import { DarkLightToggleComponent } from '../dark-light-toggle/dark-light-toggle.component';
 
 @Component({
@@ -8,5 +9,6 @@ import { DarkLightToggleComponent } from '../dark-light-toggle/dark-light-toggle
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+  readonly i18n = inject(LanguageService);
 
 }

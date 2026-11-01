@@ -1,14 +1,47 @@
-<div class="project-single">
-    <img [ngSrc]="imgPath" width="200" height="100" alt="" [class.small-icon]="smallIcon">
-    <h3>{{title}}</h3>
-    <p>{{description}}</p>
-    @if (url) {
-        <a [href]="url" target="_blank">{{title}}
-            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 4H4V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V13" stroke="#F45D48" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M9 15L20 4" stroke="#F45D48" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M15 4H20V9" stroke="#F45D48" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-            </svg>
-        </a>
-    } @else {
-        <span class="private-badge">Projeto Privado</span>
-    }
-</div>
+<article class="card" [class.wide]="wide">
+    <div class="panel" [style.background]="panel || null">
+        @if (imgPath) {
+            <img [src]="imgPath" [alt]="title" loading="lazy" [class.icon]="icon" [style.max-width]="icon ? null : logoWidth">
+        }
+    </div>
+
+    <div class="body">
+        <div class="title-row">
+            <h3>{{ title }}</h3>
+            @if (status) {
+                <span class="status">{{ status }}</span>
+            }
+        </div>
+
+        <p class="desc">{{ description }}</p>
+
+        @if (code) {
+            <pre class="code"><code>{{ code }}</code></pre>
+        }
+
+        @if (note) {
+            <p class="note">{{ note }}</p>
+        }
+
+        @if (tags.length) {
+            <ul class="tags" [attr.aria-label]="tagsLabel">
+                @for (tag of tags; track tag) {
+                    <li>{{ tag }}</li>
+                }
+            </ul>
+        }
+
+        <div class="footer">
+            @if (url) {
+                <a [href]="url" target="_blank" rel="noopener">
+                    {{ linkLabel }}
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            } @else {
+                <span class="private">{{ privateLabel }}</span>
+            }
+        </div>
+    </div>
+</article>

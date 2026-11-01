@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../i18n/language.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-form-contact',
-  imports: [ReactiveFormsModule,CommonModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './form-contact.component.html',
   styleUrl: './form-contact.component.css'
 })
 export class FormContactComponent {
+  readonly i18n = inject(LanguageService);
   contactForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
